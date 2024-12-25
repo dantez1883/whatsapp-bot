@@ -26,7 +26,7 @@ DEBUG =
 module.exports = {
   VERSION: "v1.2.8",
   SESSION:
-    process.env.ASENA_SESSION === undefined ? "" : process.env.ASENA_SESSION,
+    process.env.ASENA_SESSION === undefined ? "levanter_25c24b37d4165a403fadab85affcf82f43" : process.env.ASENA_SESSION,
   EXT: process.env.EXT === undefined ? undefined : process.env.EXT,
   LANG:
     process.env.LANGUAGE === undefined
@@ -71,7 +71,7 @@ module.exports = {
             ssl: { require: true, rejectUnauthorized: false },
           },
         }),
-  NO_ONLINE:
+  NO_ONLINE:Always_online
     process.env.NO_ONLINE === undefined
       ? true
       : convertToBool(process.env.NO_ONLINE),
